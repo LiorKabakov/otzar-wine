@@ -6,3 +6,6 @@
 next-env.d.ts
 .DS_Store
 .env*.local
+
+# Local design-system skill (not part of the app)
+/thebendclub-design
