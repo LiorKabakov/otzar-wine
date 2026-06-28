@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Design tokens (single source of truth, referenced by tailwind.config.ts) ── */
+:root {
+  --bg: #ffffff; /* page background */
+  --surface: #f4f1ea; /* cards, panels, alt sections */
+  --text: #17231f; /* headings + body */
+  --muted: #52615c; /* captions, secondary info */
+  --brand: #7e2230; /* wine red (logo) — brand, primary CTA, highlights */
+  --functional: #4a5565; /* slate — links, focus rings, interactive states */
+  --border: #d4d0c5; /* warm hairline border on light surfaces */
+  --danger: #ff6568; /* error/destructive only */
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-heebo), system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-rubik), system-ui, sans-serif;
+    line-height: 1.2;
+  }
+
+  /* Visible keyboard focus in the functional accent (a11y floor). */
+  :focus-visible {
+    outline: 2px solid var(--functional);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Respect users who opt out of motion. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
