@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { motion, useReducedMotion } from 'framer-motion'
 import Button from './ui/Button'
 import StarMark from './ui/StarMark'
@@ -54,13 +55,21 @@ export default function Nav() {
         className="mx-auto flex max-w-content items-center justify-between gap-6 px-6 lg:px-12"
         aria-label="ניווט ראשי"
       >
-        {/* Wordmark — placeholder for a logo <Image> (swaps with no layout shift). */}
+        {/* Brand logo (stacked lockup). */}
         <motion.a
           variants={item}
           href="#top"
-          className="font-display text-xl font-bold tracking-tight text-text"
+          aria-label="אוצר היין"
+          className="inline-flex items-center"
         >
-          אוצר היין
+          <Image
+            src="/logo.png"
+            alt="אוצר היין"
+            width={1078}
+            height={830}
+            priority
+            className="h-11 w-auto"
+          />
         </motion.a>
 
         {/* Links separated by the star mark. */}

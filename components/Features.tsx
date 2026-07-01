@@ -2,12 +2,32 @@
 
 import Reveal, { RevealGroup } from './ui/Reveal'
 import StarMark from './ui/StarMark'
+import Photo from './ui/Photo'
+import EdgeFade from './ui/EdgeFade'
+import { images } from '@/lib/images'
 
-const features = [
-  { label: 'הבקבוקים', headline: ['מאות תוויות.', 'מהארץ ומהעולם.'] },
+type Feature = {
+  label: string
+  headline: readonly string[]
+  image?: string | null
+  alt?: string
+}
+
+const features: Feature[] = [
+  {
+    label: 'הבקבוקים',
+    headline: ['מאות תוויות.', 'מהארץ ומהעולם.'],
+    image: images.featBottles,
+    alt: 'קיר היין עם מאות תוויות בחנות אוצר היין',
+  },
   { label: 'הבר', headline: ['כוס פתוחה.', 'כל ערב.'] },
-  { label: 'לא רק יין', headline: ['וויסקי, ערק,', 'ספיריטים ועוד.'] },
-] as const
+  {
+    label: 'לא רק יין',
+    headline: ['וויסקי, ערק,', 'ספיריטים ועוד.'],
+    image: images.featSpirits,
+    alt: 'מדף הוויסקי והספיריטים בחנות אוצר היין',
+  },
+]
 
 export default function Features() {
   return (
@@ -39,6 +59,19 @@ export default function Features() {
                   ))}
                 </h3>
               </div>
+              {f.image && (
+                <div className="pb-10">
+                  <div className="relative aspect-[16/9] w-full overflow-hidden md:aspect-[2/1]">
+                    <Photo
+                      src={f.image}
+                      alt={f.alt ?? f.label}
+                      sizes="(min-width: 96rem) 90rem, 100vw"
+                      className="object-top"
+                    />
+                    <EdgeFade color="var(--surface)" soft="rgba(244,241,234,0)" />
+                  </div>
+                </div>
+              )}
             </Reveal>
           ))}
         </RevealGroup>

@@ -11,7 +11,9 @@ import {
 import Reveal, { MaskText } from './ui/Reveal'
 import StarMark from './ui/StarMark'
 import Photo from './ui/Photo'
+import EdgeFade from './ui/EdgeFade'
 import { images } from '@/lib/images'
+import { cn } from '@/lib/cn'
 
 const items = [
   { time: 'צהריים', headline: ['נכנסים,', 'בוחרים בקבוק.'], alt: 'מדפי היין בחנות בשעות הצהריים', src: images.dayNoon },
@@ -126,11 +128,15 @@ function Stack() {
         {items.map((item) => (
           <Reveal as="li" standalone key={item.time}>
             <div
-              className="relative aspect-[16/10] w-full overflow-hidden rounded-sm border border-border bg-surface"
+              className={cn(
+                'relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-surface',
+                !item.src && 'border border-border',
+              )}
               role={item.src ? undefined : 'img'}
               aria-label={item.src ? undefined : item.alt}
             >
               <Photo src={item.src} alt={item.alt} sizes="100vw" />
+              {item.src && <EdgeFade color="var(--bg)" soft="rgba(255,255,255,0)" />}
             </div>
             <p className="mt-5 flex items-center gap-2 font-sans text-sm font-medium tracking-wide text-muted">
               <StarMark className="text-base" />

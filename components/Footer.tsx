@@ -23,9 +23,6 @@ export default function Footer() {
             <p className="mt-2 max-w-xs font-sans text-sm text-muted">
               חנות אלכוהול ובר יין באשדוד.
             </p>
-            <span className="mt-3 inline-block rounded-pill border border-brand px-2 py-0.5 font-sans text-xs font-medium text-brand">
-              כשר
-            </span>
           </div>
 
           {/* Address + hours */}
@@ -105,13 +102,31 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-3 border-t border-border pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="flex items-center gap-2 font-sans text-sm text-muted">
-            <StarMark className="text-sm" />© <bdi>2026</bdi> אוצר היין
-          </p>
-          <p className="font-sans text-sm text-muted">
-            מיועד לבני <bdi>18</bdi> ומעלה. נא לשתות באחריות.
-          </p>
+        <div className="mt-12 flex flex-col gap-4 border-t border-border pt-6">
+          <nav
+            aria-label="עמודים משפטיים"
+            className="flex flex-wrap items-center gap-x-3 gap-y-1 font-sans text-xs text-muted"
+          >
+            <a href="/privacy" className="transition-colors hover:text-text">
+              מדיניות פרטיות
+            </a>
+            <span aria-hidden>·</span>
+            <a href="/terms" className="transition-colors hover:text-text">
+              תנאי שימוש
+            </a>
+            <span aria-hidden>·</span>
+            <a href="/accessibility" className="transition-colors hover:text-text">
+              הצהרת נגישות
+            </a>
+          </nav>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <p className="flex items-center gap-2 font-sans text-sm text-muted">
+              <StarMark className="text-sm" />© <bdi>2026</bdi> אוצר היין
+            </p>
+            <p className="font-sans text-sm text-muted">
+              מיועד לבני <bdi>18</bdi> ומעלה. נא לשתות באחריות.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

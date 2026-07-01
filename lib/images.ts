@@ -14,11 +14,15 @@
  */
 export const images = {
   /** Hero full-bleed background — 16:9 (subject left, quiet right). */
-  hero: null as string | null,
+  hero: '/images/hero.jpeg' as string | null,
   /** DayTrio · צהריים — 4:5 portrait. */
-  dayNoon: null as string | null,
+  dayNoon: '/images/day-noon.jpeg' as string | null,
   /** DayTrio · אחר הצהריים — 4:5 portrait. */
-  dayAfternoon: null as string | null,
+  dayAfternoon: '/images/day-afternoon.jpeg' as string | null,
   /** DayTrio · ערב — 4:5 portrait. */
   dayEvening: null as string | null,
+  /** Features · הבקבוקים — full-width wine-wall band (shared with the OG image). */
+  featBottles: '/images/og.jpeg' as string | null,
+  /** Features · לא רק יין — full-width spirits band. */
+  featSpirits: '/images/feat-spirits.jpeg' as string | null,
 }

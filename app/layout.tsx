@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description:
       'חנות אלכוהול ובר יין בלב אשדוד — יין, וויסקי, ספיריטים ובר יין פתוח.',
     url: '/',
-    // images: ['/og.jpg'], // TODO: add once a real OG image is supplied
+    images: ['/images/og.jpeg'],
   },
   robots: { index: true, follow: true },
 }

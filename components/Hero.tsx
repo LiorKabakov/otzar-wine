@@ -46,7 +46,7 @@ export default function Hero() {
 
   return (
     <section ref={sectionRef} id="top" className="relative bg-bg">
-      <div className="mx-auto grid max-w-content grid-cols-1 items-center gap-12 px-6 pb-16 pt-32 md:pt-36 lg:grid-cols-12 lg:gap-14 lg:px-12 lg:pb-24 lg:pt-44">
+      <div className="mx-auto grid max-w-content grid-cols-1 items-center gap-12 px-6 pb-16 pt-24 lg:grid-cols-12 lg:gap-14 lg:px-12 lg:pb-24">
         {/* Copy */}
         <div className="order-2 lg:order-1 lg:col-span-6">
           <motion.p
@@ -55,9 +55,6 @@ export default function Hero() {
           >
             <StarMark className="text-base" />
             חנות בוטיק ליין ואלכוהול · בר יין
-            <span className="ms-1 rounded-pill border border-brand px-2 py-0.5 text-xs font-medium text-brand">
-              כשר
-            </span>
           </motion.p>
 
           <MaskText

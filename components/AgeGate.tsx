@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 import Button from './ui/Button'
 import { markIntroReady } from '@/lib/intro'
 
@@ -22,6 +23,8 @@ export default function AgeGate() {
     const confirmed =
       typeof window !== 'undefined' &&
       window.localStorage.getItem(STORAGE_KEY) === 'true'
+    // Gate already passed on load → let the hero/nav intro start immediately.
+    if (confirmed) markIntroReady()
     setStage(confirmed ? 'done' : 'ask')
   }, [])
 
@@ -50,6 +53,8 @@ export default function AgeGate() {
     } catch {
       // ignore storage failures (private mode) — still dismiss for this session
     }
+    // User just confirmed → kick off the hero/nav intro reveal.
+    markIntroReady()
     setStage('done')
   }
 
@@ -62,7 +67,14 @@ export default function AgeGate() {
       className="fixed inset-0 z-50 flex items-center justify-center bg-text/70 p-6"
     >
       <div className="w-full max-w-md rounded-sm border border-border bg-bg p-8 shadow-[0_12px_40px_rgba(23,35,31,0.22)]">
-        <p className="font-display text-2xl font-bold text-brand">אוצר היין</p>
+        <Image
+          src="/logo.png"
+          alt="אוצר היין"
+          width={1078}
+          height={830}
+          priority
+          className="mx-auto h-24 w-auto"
+        />
 
         {stage === 'ask' ? (
           <>
