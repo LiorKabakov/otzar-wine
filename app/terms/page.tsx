@@ -14,7 +14,7 @@ export default function TermsPage() {
         <h1 className="font-display text-[clamp(2rem,5vw,3rem)] font-bold leading-[1.1] text-text">
           תנאי שימוש
         </h1>
-        <p className="text-sm text-muted">עודכן לאחרונה: [להשלים]</p>
+        <p className="text-sm text-muted">עודכן לאחרונה: 07/07/2026</p>
 
         <p>
           ברוכים הבאים לאתר אוצר היין. השימוש באתר כפוף לתנאים הבאים. אם אינך
@@ -64,12 +64,12 @@ export default function TermsPage() {
         <h2>דין ושיפוט</h2>
         <p>
           על תנאים אלה יחולו דיני מדינת ישראל, וסמכות השיפוט הבלעדית נתונה לבתי
-          המשפט המוסמכים ב[מחוז / עיר — להשלים].
+          המשפט המוסמכים במחוז דרום.
         </p>
 
         <h2>יצירת קשר</h2>
         <p>
-          [אימייל] ·{' '}
+          otzarwine1477@gmail.com ·{' '}
           <a href="tel:+972504922311">
             <bdi dir="ltr">050-492-2311</bdi>
           </a>{' '}

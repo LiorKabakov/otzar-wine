@@ -14,7 +14,7 @@ export default function AccessibilityPage() {
         <h1 className="font-display text-[clamp(2rem,5vw,3rem)] font-bold leading-[1.1] text-text">
           הצהרת נגישות
         </h1>
-        <p className="text-sm text-muted">עודכן לאחרונה: [להשלים]</p>
+        <p className="text-sm text-muted">עודכן לאחרונה: 07/07/2026</p>
 
         <p>
           אוצר היין רואה חשיבות רבה במתן שירות שוויוני ונגיש לכלל הלקוחות, לרבות
@@ -41,8 +41,7 @@ export default function AccessibilityPage() {
 
         <h2>מגבלות ידועות</h2>
         <p>
-          [פרט כאן רכיבים שטרם הונגשו במלואם, אם קיימים — או ציין “לא ידועות
-          מגבלות נכון למועד העדכון”.]
+          לא ידועות מגבלות נגישות נכון למועד עדכון ההצהרה.
         </p>
 
         <h2>פנייה בנושא נגישות (רכז נגישות)</h2>
@@ -51,7 +50,7 @@ export default function AccessibilityPage() {
         </p>
         <ul>
           <li>
-            <strong>רכז/ת נגישות:</strong> [שם — להשלים]
+            <strong>רכז/ת נגישות:</strong> דן אוחיון
           </li>
           <li>
             <strong>טלפון:</strong>{' '}
@@ -60,13 +59,13 @@ export default function AccessibilityPage() {
             </a>
           </li>
           <li>
-            <strong>דוא״ל:</strong> [אימייל — להשלים]
+            <strong>דוא״ל:</strong> otzarwine1477@gmail.com
           </li>
         </ul>
         <p>נשתדל לטפל בפניות בתוך זמן סביר.</p>
 
         <p>
-          <strong>תאריך עדכון ההצהרה:</strong> [להשלים]
+          <strong>תאריך עדכון ההצהרה:</strong> 07/07/2026
         </p>
       </article>
     </LegalShell>

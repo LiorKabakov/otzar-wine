@@ -18,7 +18,7 @@ const heebo = Heebo({
   display: 'swap',
 })
 
-const SITE_URL = 'https://otzar-hayain.co.il' // TODO: replace with real domain
+const SITE_URL = 'https://otzarwine.co.il'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -81,7 +81,7 @@ const jsonLd = {
     'https://www.instagram.com/otzar_wine/',
     'https://www.facebook.com/profile.php?id=61585669423608',
   ],
-  // priceRange: TODO — not yet set.
+  priceRange: '₪₪',
 }
 
 export default function RootLayout({

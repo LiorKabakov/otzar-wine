@@ -14,7 +14,7 @@ export default function PrivacyPage() {
         <h1 className="font-display text-[clamp(2rem,5vw,3rem)] font-bold leading-[1.1] text-text">
           מדיניות פרטיות
         </h1>
-        <p className="text-sm text-muted">עודכן לאחרונה: [להשלים]</p>
+        <p className="text-sm text-muted">עודכן לאחרונה: 07/07/2026</p>
 
         <p>
           אוצר היין (“אנחנו”, “העסק”) מכבד את פרטיותך. מדיניות זו מסבירה איזה
@@ -32,8 +32,7 @@ export default function PrivacyPage() {
           <li>
             <strong>מידע טכני / גלישה</strong> — כתובת IP, סוג דפדפן, עמודים
             שנצפו ונתוני שימוש, שנאספים אוטומטית לצורכי תפעול וסטטיסטיקה, לרבות
-            באמצעות עוגיות (Cookies) וכלי אנליטיקס [כגון Google Analytics —
-            להשלים אם בשימוש].
+            באמצעות עוגיות (Cookies) וכלי אנליטיקס.
           </li>
         </ul>
 
@@ -66,7 +65,7 @@ export default function PrivacyPage() {
         <h2>זכויותיך</h2>
         <p>
           בהתאם לחוק הגנת הפרטיות, התשמ״א-1981 ותיקוניו, זכותך לעיין במידע שנאסף
-          אודותיך, לבקש את תיקונו או מחיקתו. לפנייה: [אימייל] /{' '}
+          אודותיך, לבקש את תיקונו או מחיקתו. לפנייה: otzarwine1477@gmail.com /{' '}
           <a href="tel:+972504922311">
             <bdi dir="ltr">050-492-2311</bdi>
           </a>
@@ -86,7 +85,7 @@ export default function PrivacyPage() {
 
         <h2>יצירת קשר</h2>
         <p>
-          לשאלות בנושא פרטיות: [אימייל] ·{' '}
+          לשאלות בנושא פרטיות: otzarwine1477@gmail.com ·{' '}
           <a href="tel:+972504922311">
             <bdi dir="ltr">050-492-2311</bdi>
           </a>{' '}
