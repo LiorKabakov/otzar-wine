@@ -62,7 +62,7 @@ export default function Hero() {
             lines={['כאן היין', 'פוגש את הערב']}
             animateState={state}
             delay={reduceMotion ? 0 : 0.15}
-            className="mt-6 font-display text-[clamp(3rem,9vw,8rem)] font-bold leading-[1.05] text-text"
+            className="mt-6 font-display text-[clamp(2.75rem,9vw,8rem)] font-bold leading-[1.05] text-text"
           />
 
           <motion.p
@@ -75,20 +75,20 @@ export default function Hero() {
 
           <motion.div
             {...fadeUp(0.72)}
-            className="mt-8 flex flex-wrap items-center gap-3"
+            className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center"
           >
-            <Button as="a" href="#visit" variant="brand" arrow>
+            <Button as="a" href="#visit" variant="brand" arrow className="w-full sm:w-auto">
               בואו לבקר
             </Button>
-            <Button as="a" href="#visit" variant="ghost">
+            <Button as="a" href="#visit" variant="ghost" className="w-full sm:w-auto">
               <CalendarDays className="size-4" aria-hidden />
               הזמינו שולחן
             </Button>
-            <Button as="a" href={`tel:${PHONE}`} variant="ghost">
+            <Button as="a" href={`tel:${PHONE}`} variant="ghost" className="w-full sm:w-auto">
               <Phone className="size-4" aria-hidden />
               התקשרו
             </Button>
-            <Button as="a" href="#visit" variant="ghost">
+            <Button as="a" href="#visit" variant="ghost" className="w-full sm:w-auto">
               <MapPin className="size-4" aria-hidden />
               הוראות הגעה
             </Button>
@@ -102,7 +102,7 @@ export default function Hero() {
             animate={{ scale: state === 'show' ? 1 : reduceMotion ? 1 : 1.08 }}
             transition={{ duration: 1.2, ease: EASE_OUT }}
             style={{ y: imageY }}
-            className="relative aspect-[4/5] w-full bg-surface"
+            className="relative aspect-[4/3] w-full bg-surface sm:aspect-[4/5]"
             role={images.hero ? undefined : 'img'}
             aria-label={images.hero ? undefined : 'חזית החנות ובר היין של אוצר היין'}
           >

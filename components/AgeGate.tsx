@@ -64,7 +64,7 @@ export default function AgeGate() {
       aria-modal="true"
       aria-labelledby="agegate-title"
       aria-describedby="agegate-desc"
-      className="fixed inset-0 z-50 flex items-center justify-center bg-text/70 p-6"
+      className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-text/70 p-6"
     >
       <div className="w-full max-w-md rounded-sm border border-border bg-bg p-8 shadow-[0_12px_40px_rgba(23,35,31,0.22)]">
         <Image
@@ -73,7 +73,7 @@ export default function AgeGate() {
           width={1078}
           height={830}
           priority
-          className="mx-auto h-24 w-auto"
+          className="mx-auto h-20 w-auto sm:h-24"
         />
 
         {stage === 'ask' ? (

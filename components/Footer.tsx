@@ -107,15 +107,15 @@ export default function Footer() {
             aria-label="עמודים משפטיים"
             className="flex flex-wrap items-center gap-x-3 gap-y-1 font-sans text-xs text-muted"
           >
-            <a href="/privacy" className="transition-colors hover:text-text">
+            <a href="/privacy" className="inline-block py-1 transition-colors hover:text-text">
               מדיניות פרטיות
             </a>
             <span aria-hidden>·</span>
-            <a href="/terms" className="transition-colors hover:text-text">
+            <a href="/terms" className="inline-block py-1 transition-colors hover:text-text">
               תנאי שימוש
             </a>
             <span aria-hidden>·</span>
-            <a href="/accessibility" className="transition-colors hover:text-text">
+            <a href="/accessibility" className="inline-block py-1 transition-colors hover:text-text">
               הצהרת נגישות
             </a>
           </nav>

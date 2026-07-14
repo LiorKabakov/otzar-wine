@@ -5,6 +5,7 @@ import Features from '@/components/Features'
 import Faq from '@/components/Faq'
 import Visit from '@/components/Visit'
 import Footer from '@/components/Footer'
+import MobileActionBar from '@/components/MobileActionBar'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Visit />
       </main>
       <Footer />
+      <MobileActionBar />
     </>
   )
 }
